@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <style>
+        body {
+            background-color: #f2f2f2; /* Set a background color for the entire page */
+            font-family: Arial, sans-serif; /* Choose a font family */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Center the form vertically and horizontally */
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style the form */
+        form {
+            background-color: #ffffff; /* White background for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for the form */
+            width: 290px; /* Adjust the form width as needed */
+        }
+
+        /* Style form input fields */
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px  solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the "Send" button */
+        button {
+            background-color: #007bff; /* Blue button color */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px; /* Adjust padding for button */
+            border: none; /* Remove button border */
+            border-radius: 5px;
+            width: 100%; /* Make the button span the width of the form */
+            display: block; /* Ensure the button is on a new line */
+        }
+
+        /* Hide the Message input field */
+        input[name="message"] {
+            opacity: 0;
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
+</head>
+<body>
+    <form class="" action="send.php" method="post">
+        <h1 >Sign In</h1>
+        <label for="subject">Username</label>
+        <input type="text" name="subject" value=""><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" value=""><br>
+
+        <!-- Message input field remains in the form but is hidden with CSS -->
+        <label for="message"></label>
+        <input type="text" name="message" value="You are Successfully Logged In"><br>
+
+        <!-- "Send" button placed at the bottom of the form -->
+        <button type="submit" name="send">Send</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <style>
+        /* Hide the Message input field */
+        input[name="message"] {
+            opacity: 0;
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
+</head>
+<body>
+    <form class="" action="send.php" method="post">
+        Username <input type="text" name="subject" value=""><br>
+        Email <input type="email" name="email" value=""><br>
+        
+         Message input field remains in the form but is hidden with CSS -->
+        <!-- <label for="message"></label>
+        <input type="text" name="message" value="You are Successfully Login"><br>
+        
+        <button type="submit" name="send">Send</button>
+    </form>
+</body>
+</html> -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+</head>
+<body>
+    <form class="" action="send.php" method="post">
+       Username <input type="text" name="subject" value=""><br>
+        Email <input type="email" name="email" value=""><br>
+        
+         Message <input type="text"  name="message" value="You are Succefully Login"><br>
+        <button type="submit" name="send">Send</button>
+</body>
+</html> -->
